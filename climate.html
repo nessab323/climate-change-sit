@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF‑8">
+  <meta name="viewport" content="width=device‑width,initial‑scale=1">
+  <title>Climate Change in the UK</title>
+  <style>
+    body { margin:0; font-family:sans-serif; line-height:1.6; color:#333; }
+    .hero { background:url('hero.jpg') center/cover; height:50vh; display:flex; justify-content:center; align-items:center; color:#fff; text-shadow:0 0 5px #000;}
+    .container { padding:2rem; max-width:900px; margin:auto; }
+    h1, h2 { color:#006400; }
+    .stats { display:grid; grid-template-columns:1fr 1fr; gap:1rem; }
+    .stat { background:#e0ffe0; padding:1rem; border-radius:8px; }
+    .accordion { border-top:1px solid #ccc; }
+    .accordion-item { border-bottom:1px solid #ccc; }
+    .accordion-header { padding:1rem; cursor:pointer; background:#f5f5f5; }
+    .accordion-content { display:none; padding:1rem; background:#fff; }
+    .cta { text-align:center; margin:2rem 0; }
+    .cta a { background:#006400; color:#fff; padding:0.75rem 1.5rem; border-radius:4px; text-decoration:none; }
+    @media (max-width:600px){ .stats { grid-template-columns:1fr; } }
+  </style>
+</head>
+<body>
+
+  <section class="hero">
+    <h1>Climate in Crisis: UK in Focus</h1>
+  </section>
+
+  <div class="container">
+    <section>
+      <h2>Key Facts</h2>
+      <div class="stats">
+        <div class="stat">
+          <h3>479 Mt CO₂e</h3>
+          <p>2023 emissions – lowest since 1990</p>
+        </div>
+        <div class="stat">
+          <h3>–43 %</h3>
+          <p>Cut since 1990 baseline</p>
+        </div>
+        <div class="stat">
+          <h3>80 %</h3>
+          <p>Farmers hit by yield losses</p>
+        </div>
+        <div class="stat">
+          <h3>50 %</h3>
+          <p>Chance of 40 °C+ summers in 12 yrs</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="accordion">
+      <h2>Trends & Threats</h2>
+      <div class="accordion-item">
+        <div class="accordion-header">🔥 Extreme Heat & Drought</div>
+        <div class="accordion-content">
+          <p>Spring 2025 was driest since 1976; record-breaking heat spells likely to increase :contentReference[oaicite:15]{index=15}.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <div class="accordion-header">🚜 Agriculture & Food</div>
+        <div class="accordion-content">
+          <p>8 in 10 farmers affected by extreme weather; food prices are rising :contentReference[oaicite:16]{index=16}.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <div class="accordion-header">🏗️ Adapting & Policy Gaps</div>
+        <div class="accordion-content">
+          <p>Fire services warn of inadequate prep; adaptation lagging behind targets :contentReference[oaicite:17]{index=17}.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Media & Voices</h2>
+      <p>Include embedded videos from Extinction Rebellion, government briefings, or social media reactions.</p>
+    </section>
+
+    <div class="cta">
+      <h2>Take Action Today</h2>
+      <a href="#take-action">Join a Local Initiative</a>
+    </div>
+  </div>
+
+  <script>
+    document.querySelectorAll('.accordion-header').forEach(h => {
+      h.addEventListener('click', () => {
+        const content = h.nextElementSibling;
+        content.style.display = content.style.display === 'block' ? 'none' : 'block';
+      });
+    });
+  </script>
+</body>
+</html>
